@@ -1,0 +1,58 @@
+.todo {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background-color: black;
+	color: var(--main-color);
+	border-radius: 10px;
+	padding: 20px;
+	overflow-y: scroll;
+	height: 100%;
+	overflow-y: scroll;
+	&__container {
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__body {
+		width: calc(75% - 13px);
+	}
+	&__todo-body {
+		display: block;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		cursor: pointer;
+	}
+	&__edit-button {
+		width: calc(25% - 13px);
+		margin: 0;
+	}
+	&__title {
+		background-color: var(--main-color);
+		border: 0px;
+	}
+	&__title:focus {
+		outline: 0;
+	}
+}
+
+.isEditing {
+	background-color: var(--main-color);
+	width: fit-content;
+	position: absolute;
+	top: 50%;
+	left: 30%;
+	padding: 20px;
+	border-radius: 15px;
+	transition-duration: 0.2s;
+	.todo__title {
+		background-color: black;
+		color: var(--main-color);
+	}
+	.todo__save-button {
+		background-color: black;
+		color: var(--main-color);
+	}
+}
