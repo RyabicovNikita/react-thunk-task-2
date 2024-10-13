@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux';
-import { deleteTodo, updateTodo } from '../../utils/actions';
+import { deleteTodo, updateTodo } from '../../utils/actions/todo-actions';
 import { Button } from '../Button/Button';
 import './todo.scss';
 import { useState } from 'react';

@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
-import { getTodos } from '../../../../utils/actions';
+import { getTodos } from '../../../../utils/actions/todo-actions';
 
 export const Search = ({ className }) => {
 	const [value, setValue] = useState('');

@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { getTodos } from '../../../../utils/actions';
+import { getTodos } from '../../../../utils/actions/todo-actions';
 
 export const Sorting = ({ className }) => {
 	const dispatch = useDispatch();

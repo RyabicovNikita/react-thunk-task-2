@@ -2,5 +2,5 @@ import { useSelector } from 'react-redux';
 
 export const Loading = () => {
 	const className = useSelector((state) => state.optionsReducer.classNames.loading);
-	return <div className={className()}>Loading...</div>;
+	return <div className={typeof className === 'function' ? className() : ''}>Loading...</div>;
 };

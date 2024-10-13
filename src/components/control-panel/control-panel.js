@@ -3,7 +3,7 @@ import { Button } from '../Button/Button';
 import { Search } from './components/Search/Search';
 import { Sorting } from './components/Sorting/Sorting';
 import './control-panel.scss';
-import { createTodo } from '../../utils/actions';
+import { createTodo } from '../../utils/actions/todo-actions';
 
 export const ControlPanel = () => {
 	const dispatch = useDispatch();
